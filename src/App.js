@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Name from './components/Name/Name'
 
 function App() {
   return (
@@ -19,17 +20,16 @@ function App() {
         </a>
       </header>
       <main>
-        <ComponentFirst naam={'hello test0000000000'} />
+        {/* <FruitProvider>
+          <p>{json?.name}</p>
+        </FruitProvider> */}
+        <Name naam={'hello Thuan-Hoa'} />
       </main>
     </div>
   );
 }
 
-const ComponentFirst = ({naam}) => {
-  return (
-    <h2>{naam}</h2>
-  )
-}
+
 
 export default App;
 
