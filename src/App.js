@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Name from './components/Name/Name'
+import {FruitProvider} from './contexts/FruitContext';
+import List from './components/List/List' 
 
 function App() {
   return (
@@ -23,7 +25,11 @@ function App() {
         {/* <FruitProvider>
           <p>{json?.name}</p>
         </FruitProvider> */}
-        <Name naam={'hello Thuan-Hoa'} />
+
+          <FruitProvider>
+            <List />
+        </FruitProvider>
+        <Name naam={'hello Thuan-Hoa le'} />
       </main>
     </div>
   );
