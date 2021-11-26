@@ -27,7 +27,10 @@ function App() {
         </FruitProvider> */}
 
           <FruitProvider>
-            <List />
+            <List 
+              value={'family'}
+              naam={'popo'} 
+            />
         </FruitProvider>
         <Name naam={'hello Thuan-Hoa le'} />
       </main>
